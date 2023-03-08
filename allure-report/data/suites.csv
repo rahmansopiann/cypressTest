@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Mar 08 00:40:41 ICT 2023","Wed Mar 08 00:40:52 ICT 2023","11808","","Saucedemo Login Test","","","","Shows error message with invalid credentials using custom command",""
+"passed","Wed Mar 08 00:40:27 ICT 2023","Wed Mar 08 00:40:39 ICT 2023","11709","","Saucedemo Login Test","","","","Logs in successfully with valid credentials using Page Object",""
+"passed","Wed Mar 08 00:39:29 ICT 2023","Wed Mar 08 00:39:44 ICT 2023","14898","","Saucedemo Login Test","","","","Logs in successfully with valid credentials",""
+"passed","Wed Mar 08 00:39:44 ICT 2023","Wed Mar 08 00:39:50 ICT 2023","6189","","Saucedemo Login Test","","","","Shows error message with invalid credentials",""

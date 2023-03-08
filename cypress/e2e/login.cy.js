@@ -1,4 +1,6 @@
+// Login Scenario saucedemo
 describe("Saucedemo Login Test", () => {
+  //Positif case
   it("Logs in successfully with valid credentials", () => {
     cy.visit("https://www.saucedemo.com/");
     cy.get("#user-name").type("standard_user");
@@ -7,7 +9,7 @@ describe("Saucedemo Login Test", () => {
     cy.url().should("include", "/inventory.html");
     cy.get(".title").should("contain", "Products");
   });
-
+  //Negatif case
   it("Shows error message with invalid credentials", () => {
     cy.visit("https://www.saucedemo.com/");
     cy.get("#user-name").type("invalid_user");
