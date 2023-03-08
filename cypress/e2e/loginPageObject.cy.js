@@ -1,11 +1,15 @@
 import LoginPage from "../pageObjects/loginPage";
 
+let username = Cypress.env('validUsername');
+let password = Cypress.env('validPassword');
+
 describe("Login Scenario saucedemo", () => {
+  
   // Define positif case
   it("Login successfully with valid credentials", () => {
     LoginPage.visit();
-    LoginPage.fillUsername("standard_user");
-    LoginPage.fillPassword("secret_sauce");
+    LoginPage.fillUsername(username);
+    LoginPage.fillPassword(password);
     LoginPage.clickLoginButton();
     LoginPage.isLoggedIn();
   });
