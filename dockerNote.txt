@@ -1,0 +1,2 @@
+# run in docker
+docker run -it -v "%cd%":/e2e -w /e2e cypress/included:10.10.0 --spec cypress/e2e/*.js --browser chrome
