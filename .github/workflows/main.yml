@@ -9,8 +9,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Cypress run
-        if: success() || failure()
-        uses: cypress-io/github-action@v4 
+        uses: cypress-io/github-action@v4
+        if: always()
         with:
           command: npm run ui-regression
       - name: Uploading artifact
