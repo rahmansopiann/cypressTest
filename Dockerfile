@@ -12,6 +12,6 @@ COPY ./cypress ./cypress
 #Install the cypress dependencies in the work directory
 RUN npm install
 #Executable commands the container will use[Exec Form]
-ENTRYPOINT ["npx","cypress","run"]
+ENTRYPOINT ["npm","run","tests"]
 #With CMD in this case, we can specify more parameters to the last entrypoint.
 CMD [""]    
