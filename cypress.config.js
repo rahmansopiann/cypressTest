@@ -5,7 +5,7 @@ module.exports = defineConfig({
   reporter: "cypress-mochawesome-reporter",
   reporterOptions: {
     charts: true,
-    reportPageTitle: "allure-report",
+    reportPageTitle: "Automation-report",
     embeddedScreenshots: true,
     inlineAssets: true,
     saveAllAttempts: false,
