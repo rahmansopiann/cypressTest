@@ -1,7 +1,7 @@
 describe("Login Scenario saucedemo", () => {
   beforeEach(() => {
-    cy.visit("/")
-  })
+    cy.visit("/");
+  });
   // Define positif case
   it("Login successfully with valid credentials", () => {
     cy.get("#user-name").type("standard_user");
