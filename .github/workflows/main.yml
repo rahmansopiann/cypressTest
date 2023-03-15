@@ -8,15 +8,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3.3.0
-        with: 
-          node-version: '16'
       - name: Cypress run
         uses: cypress-io/github-action@v5
         if: always()
         with:
           command: npm run ui-regression
       - name: Uploading artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: always()
         with:
           name: cypress-execution-report
